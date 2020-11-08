@@ -1,0 +1,147 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $mainblue;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 5px;
+
+  li {
+    list-style: none;
+    padding: 10px;
+    a {
+      text-decoration: none;
+      color: white;
+
+      .icon-search, .icon-person{
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  & > :nth-child(1) {
+    margin-right: auto;
+  }
+}
+
+h1{
+  font-size: 64px;
+}
+
+p{
+  font-size: 24px;
+}
+
+.white{
+  color: white;
+}
+
+.align-flex-end{
+  align-self: flex-end;
+}
+
+.align-flex-start{
+  align-self: flex-start;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+.m-0auto{
+  margin: 0 auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.color-mustard{
+  color: $mustard;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mr-15{
+  margin-right: 15px;
+}
+
+.mb-75{
+  margin-bottom: 75px;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+.security-text{
+  font-size: 16px;
+  color: $mustard;
+}
+
+#txtEmailAddress{
+  width: 780px;
+  height: 70px;
+  border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 2px;
+  line-height: 18px;
+  border: none;
+  font-weight: bold;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+#btnSubmitSearch{
+  width: 180px;
+  background-image: linear-gradient(225deg, $lightmustard 0%, $mustard 100%);
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  font-size: 24px;
+  color: $mainblue;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 992px){
+  header{
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+}
