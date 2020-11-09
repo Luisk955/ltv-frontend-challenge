@@ -76,13 +76,15 @@ main{
 }
 
 .number{
-  height: 1.5em;
-  width: 1.5em;
+  display: flex;
+  height: 2em;
+  width: 7em;
   align-items: center;
   background-color: $mainblue;
   border-radius: 50%;
   color: $mustard;
   font-size: 1.8em;
+  font-weight: bold;
 }
 
 .new-search-container{
@@ -110,10 +112,12 @@ main{
     color: $mainblue;
     align-self: center;
     font-size: 1.3em;
-    margin-left: 1.5em;
   }
   p{
-    margin-left: 4.1em;
+    margin-top: 5px;
+    &.text-content{
+      font-size: 1.15em;
+    }
   }
 }
 
@@ -132,6 +136,14 @@ main{
 .security-text{
   font-size: 16px;
   color: $mustard;
+}
+
+.text-container{
+  margin-left: 1.5em;
+}
+
+.text-numbers{
+  justify-content: space-around;
 }
 
 #txtEmailAddress{
@@ -198,16 +210,40 @@ main{
     width: 15%;
     margin-top: 0;
   }
+
+  
+.order-md-2{
+  order: 2;
+}
+
+.order-md-3{
+  order: 3;
+}
+
+.order-md-4{
+  order: 4;
+}
+
+.order-md-5{
+  order: 5;
+}
+
+.order-md-6{
+  order: 6;
+}
 }
 
 @media only screen and (min-width: 769px){
-  .header, main, footer{
+  .header, main, footer, .new-search-container{
     padding-left: 15em!important;
     padding-right: 15em!important;
   }
   
   .search-title{
     font-size: 4em;
+    &-results{
+      font-size: 2.5em;
+    }
   }
 
   p{
@@ -222,13 +258,15 @@ main{
     min-width: 60em;
   }
 
-  .content p {
-    margin-left: 3em;
-  }
-
   main{
     .main-text{
       width: 90%;
     }
+  }
+
+  .number{
+    height: 2em;
+    width: 4em;
+    font-size: 3em;
   }
 }
