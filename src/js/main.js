@@ -61,7 +61,13 @@ const fillResultData = () =>{
 document.querySelector('#btnSubmitSearch').addEventListener('click', (e)=>{
 	e.preventDefault();
 	let email = document.querySelector('#txtEmailAddress').value;
-	getToApi(email);
+	const regexpEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+	if(email.match(regexpEmail)){
+		getToApi(email);
+	}
+	else{
+		console.log('not valid');
+	}
 });
 
 

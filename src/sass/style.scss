@@ -85,6 +85,14 @@ main{
   color: $mustard;
   font-size: 1.8em;
   font-weight: bold;
+  &-results{
+    width: 8%;
+  }
+}
+
+.results-image{
+  width: 25px;
+  height: 25px;
 }
 
 .new-search-container{
@@ -140,7 +148,12 @@ main{
 
 .text-container{
   margin-left: 1.5em;
+  &-results{
+    width: 98%;
+    margin-left: 0;
+  }
 }
+
 
 .text-numbers{
   justify-content: space-around;
@@ -182,6 +195,18 @@ main{
   }
 }
 
+
+.name-container{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-container, .address-container, .phone-numbers-container, .email-container, .relatives-container{
+  min-width: 300px;
+}
+
 @media only screen and (min-width: 480px){
   #btnSubmitSearch{
     margin-top: 0px;
@@ -202,6 +227,10 @@ main{
     justify-content: space-between;
   }
 
+  p{
+    font-size: 1.25em;
+  }
+  
   .footer-text{
     width: 80%;
   }
@@ -210,27 +239,41 @@ main{
     width: 15%;
     margin-top: 0;
   }
-
   
-.order-md-2{
-  order: 2;
-}
+  .order-md-2{
+    order: 2;
+  }
 
-.order-md-3{
-  order: 3;
-}
+  .order-md-3{
+    order: 3;
+  }
 
-.order-md-4{
-  order: 4;
-}
+  .order-md-4{
+    order: 4;
+  }
 
-.order-md-5{
-  order: 5;
-}
+  .order-md-5{
+    order: 5;
+  }
 
-.order-md-6{
-  order: 6;
-}
+  .order-md-6{
+    order: 6;
+  }
+
+  .number-results{
+    margin-right: 1em;
+  }
+
+  .first-row, .second-row{
+    justify-content: space-between;
+    p{
+      margin-top: 10px;
+    }
+  }
+
+  .search-title-results{
+    font-size: 2.5em;
+  }
 }
 
 @media only screen and (min-width: 769px){
@@ -265,8 +308,17 @@ main{
   }
 
   .number{
-    height: 2em;
-    width: 4em;
+    height: 1.5em;
+    width: 3em;
     font-size: 3em;
+    &-results{
+      width: 8%;
+      height: 2em;
+    }
+  }
+  
+  .results-image{
+    width: 40px;
+    height: 45px;
   }
 }
