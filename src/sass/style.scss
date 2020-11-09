@@ -39,8 +39,61 @@ ul {
 }
 
 p{
-  font-size: 1em;
+  font-size: 1.125em;
   line-height: 23px;
+}
+
+main{
+  background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+  h2{
+    color: $mainblue;
+    font-size: 2.5em;
+  }
+
+  .main-text{
+    color: #4A4A4A;
+    line-height: 28px;
+  }
+}
+
+.footer-text{
+  font-size: 0.94em;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.footer-links{
+  font-size: 14px;
+  color: #004A80 !important;
+  letter-spacing: 0;
+  a{
+    text-decoration: none;
+  }
+}
+
+.number{
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  background-color: $mainblue;
+  border-radius: 50%;
+  color: $mustard;
+  font-size: 1.8em;
+}
+
+.content{
+  h4{
+    color: $mainblue;
+    align-self: center;
+    font-size: 1.3em;
+    margin-left: 1.5em;
+  }
+  p{
+    margin-left: 4.1em;
+  }
 }
 
 .search-title{

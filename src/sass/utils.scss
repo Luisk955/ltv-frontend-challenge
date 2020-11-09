@@ -50,6 +50,10 @@
   flex-direction: column;
 }
 
+.direction-row{
+  flex-direction: row;
+}
+
 .font-weight-bold{
   font-weight: bold;
 }
@@ -64,6 +68,19 @@
   margin-bottom: 40px;
 }
 
+.py-40{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.my-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.justify-center{
+  justify-content: center;
+}
 
 @media only screen and (min-width: 480px){
   .direction-row-md{
@@ -76,5 +93,11 @@
 
   .justify-center-md{
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .mt-40-lg{
+    margin-top: 40px !important;
   }
 }
