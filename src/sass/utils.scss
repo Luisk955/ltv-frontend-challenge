@@ -1,0 +1,80 @@
+.mt-40{
+  margin-top: 40px !important;
+}
+
+.mt-20{
+  margin-top: 20px !important;
+}
+
+.mr-15{
+  margin-right: 15px !important;
+}
+
+.mb-75{
+  margin-bottom: 75px !important;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.align-flex-end{
+  align-self: flex-end;
+}
+
+.align-flex-start{
+  align-self: flex-start;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.my-40{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+@media only screen and (min-width: 480px){
+  .direction-row-md{
+    flex-direction: row;
+  }
+
+  .mr-15-md{
+    margin-right: 15px;
+  }
+
+  .justify-center-md{
+    justify-content: center;
+  }
+}

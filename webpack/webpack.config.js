@@ -105,7 +105,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(['build']),
     new WebpackNotifierPlugin({
-      title: 'Beenverified Test',
+      title: 'LTV Test',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

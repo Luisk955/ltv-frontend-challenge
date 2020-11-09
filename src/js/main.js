@@ -9,7 +9,6 @@ const getToApi =  (pEmail) =>{
 	})
 }
 
-
 document.querySelector('#btnSubmitSearch').addEventListener('click', (e)=>{
 	e.preventDefault();
 	let email = document.querySelector('#txtEmailAddress').value;

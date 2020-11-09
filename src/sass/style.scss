@@ -8,10 +8,14 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+header{
   background-color: $mainblue;
 }
 
-nav ul {
+ul {
   list-style-type: none;
   margin-top: 5px;
 
@@ -34,72 +38,21 @@ nav ul {
   }
 }
 
-h1{
-  font-size: 64px;
+p{
+  font-size: 1em;
+  line-height: 23px;
 }
 
-p{
-  font-size: 24px;
+.search-title{
+  font-size: 38px;
 }
 
 .white{
   color: white;
 }
 
-.align-flex-end{
-  align-self: flex-end;
-}
-
-.align-flex-start{
-  align-self: flex-start;
-}
-
-.d-flex{
-  display: flex;
-}
-
-.wrap{
-  flex-wrap: wrap;
-}
-
-.direction-column{
-  flex-direction: column;
-}
-
-.m-0auto{
-  margin: 0 auto;
-}
-
-.text-center{
-  text-align: center;
-}
-
-.text-left{
-  text-align: left;
-}
-
 .color-mustard{
   color: $mustard;
-}
-
-.mt-40{
-  margin-top: 40px;
-}
-
-.mt-20{
-  margin-top: 20px;
-}
-
-.mr-15{
-  margin-right: 15px;
-}
-
-.mb-75{
-  margin-bottom: 75px;
-}
-
-.font-weight-bold{
-  font-weight: bold;
 }
 
 .security-text{
@@ -108,10 +61,8 @@ p{
 }
 
 #txtEmailAddress{
-  width: 780px;
-  height: 70px;
   border-radius: 3px;
-  border-radius: 3px;
+  min-height: 50px;
   padding-left: 5px;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -127,7 +78,6 @@ p{
 
 
 #btnSubmitSearch{
-  width: 180px;
   background-image: linear-gradient(225deg, $lightmustard 0%, $mustard 100%);
   border-radius: 6px;
   font-weight: bold;
@@ -136,12 +86,46 @@ p{
   color: $mainblue;
   letter-spacing: 1px;
   text-align: center;
+  min-height: 50px;
+  margin-top: 5px;
 }
 
+@media only screen and (min-width: 480px){
+  #btnSubmitSearch{
+    margin-top: 0px;
+    min-height: 1em;
+    min-width: 7em;
+  }
 
-@media only screen and (min-width: 992px){
-  header{
-    padding-left: 240px;
-    padding-right: 240px;
+  #txtEmailAddress{
+    min-width: 32em;
+    min-height: 5em;
+  }
+  
+  .security-text{
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .header{
+    padding-left: 15em!important;
+    padding-right: 15em!important;
+  }
+
+  .search-title{
+    font-size: 4em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
+
+  #btnSubmitSearch{
+    min-width: 10em;
+  }
+
+  #txtEmailAddress{
+    min-width: 60em;
   }
 }

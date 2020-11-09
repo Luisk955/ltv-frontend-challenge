@@ -11,29 +11,23 @@
 </head>
 
 <body>
-	<header class="d-flex wrap direction-column">
-		<nav>
-			<ul class="d-flex navbar">
-				<li><a href="/"><img src="build/images/Logo.svg" alt=""></a></li>
-				<li><a href="#home"><img class="icon-search" src="build/images/icn_search.svg" alt=""></a></li>
-				<li><a href="#home"><img class="icon-person" src="build/images/icn_person.svg" alt=""></a></li>
-			</ul>
-		</nav>
 
-		<div class="search-container m-0auto text-center mt-40 mb-75">
-			<h1 class="white">Search Any Email Address</h1>
-			<p class="white mt-20"><span class="color-mustard font-weight-bold">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
-			<form class="mt-40 d-flex" action="">
-				<input type="email" name="txtEmailAddress" id="txtEmailAddress" placeholder="EMAIL" class="mr-15">
+	<header class="d-flex wrap direction-column container header">
+		<ul class="d-flex navbar">
+			<li><a href="/"><img src="build/images/Logo.svg" alt=""></a></li>
+			<li><a href="#home"><img class="icon-search" src="build/images/icn_search.svg" alt=""></a></li>
+			<li><a href="#home"><img class="icon-person" src="build/images/icn_person.svg" alt=""></a></li>
+		</ul>
+		<div class="container text-center my-40">
+			<h1 class="white search-title">Search Any Email Address</h1>
+			<p class="white mt-15"><span class="color-mustard font-weight-bold">Start Here</span> - Look up the owner's name, photos and online profiles. See what you find!</p>
+			<form class="mt-15 d-flex direction-column direction-row-md justify-center-md" action="">
+				<input class="mr-15-md" type="email" name="txtEmailAddress" id="txtEmailAddress" placeholder="EMAIL">
 				<button type="submit" id="btnSubmitSearch">GO!</button>
 			</form>
 			<p class="text-left white security-text mt-40 d-flex"><img class="mr-15" src="build/images/lock.svg" alt="lock">&nbsp;Enter Any Email Address. They won't be notified.</p>
 		</div>
 	</header>
-
-	<main>
-		<img style="display: block; max-width: 100%" src="build/images/default-post.jpg" />
-	</main>
 
 	<script type="text/javascript" src="build/main.js"></script>
 	<!--[if !IE]><!-->
