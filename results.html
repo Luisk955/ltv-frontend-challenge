@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<link rel="preload" as="style" href="build/main.css" />
+	<link rel="preload" as="script" href="build/main.js" />
+	<link type="text/css" rel="stylesheet" href="build/main.css" />
+</head>
+
+<body>
+
+	<header class="d-flex wrap direction-column container header">
+		<ul class="d-flex navbar">
+			<li><a href="/"><img src="build/images/Logo.svg" alt=""></a></li>
+			<li><a href="#home"><img class="icon-search" src="build/images/icn_search.svg" alt=""></a></li>
+			<li><a href="#home"><img class="icon-person" src="build/images/icn_person.svg" alt=""></a></li>
+		</ul>
+	</header>
+
+	<main class="container py-40">
+		<section class="d-flex wrap justify-center direction-column">
+			<h2 class="text-center">Result</h2>
+			<p class="main-text mt-20 text-center">Look at the result below to see the details of the person you’re searched for.</p>
+    </section>
+
+    <section class="container result-container mt-10 py-10">
+      <h2 class="name text-center" id="resultName"></h2>
+      <p class="mt-10" id="description"></p>
+      <div class="name-container">
+        <h3 class="mt-10">Address</h3>
+        <p class="mt-10" id="resultAddress"></p>
+      </div>
+      <div class="email-container">
+        <h3 class="mt-10">Email</h3>
+        <p class="mt-10" id="resultEmail"></p>
+      </div>
+      <div class="phone-numbers-container">
+        <h3 class="mt-10">Phone Numbers</h3>
+      </div>
+      <div class="relatives-container">
+        <h3 class="mt-10">Relatives</h3>
+      </div>
+    </section>
+  </main>
+
+  <section class="new-search-container">
+    <div class="container text-center py-40">
+      <h2 class="white search-title">Can’t Find The Right Person?</h2>
+      <p class="white mt-15"><span class="color-mustard font-weight-bold">Try Again</span> - Make a new search</p>
+      <form class="mt-15 d-flex direction-column direction-row-md justify-center-md" action="">
+        <input class="mr-15-md" type="email" name="txtEmailAddress" id="txtEmailAddress" placeholder="EMAIL">
+        <button type="submit" id="btnSubmitSearch">GO!</button>
+      </form>
+      <p class="text-left white security-text mt-20 mt-40-lg d-flex"><img class="mr-15" src="build/images/lock.svg" alt="lock">&nbsp;Enter Any Email Address. They won't be notified.</p>
+    </div>
+  </section>
+
+
+	<footer class="container d-md-flex align-center py-10">
+		<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p class="text-center footer-links font-weight-bold"><a href="">Terms</a>&nbsp;|&nbsp;<a href="">Privacy</a></p>
+	</footer>
+
+	<script type="text/javascript" src="build/main.js"></script>
+	<!--[if !IE]><!-->
+	<script type="text/javascript" src="build/vendor.js"></script>
+	<!--<![endif]-->
+</body>
+
+</html>
